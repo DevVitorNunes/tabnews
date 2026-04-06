@@ -29,6 +29,7 @@ export default async function migrations(request, response) {
     if (migrations.length > 0) {
       return response.status(201).json(migrations);
     }
+    console.log(response.status(200).json(migrations));
     return response.status(200).json(migrations);
   }
   response.status(405);
